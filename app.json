@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "handson",
+    "slug": "handson",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
