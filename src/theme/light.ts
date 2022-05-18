@@ -7,8 +7,7 @@ export default {
     primary_heavy: '#1E1E1F',
 
     white: '#FFFFFF',
-    dark_heavy: '#000000',
-    border: '#B099E5',
+    border: '#006152',
 
     switcherEnabled: '#F5DD4B',
     switcherDisabled: '#969696',

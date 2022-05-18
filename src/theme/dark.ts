@@ -3,11 +3,10 @@ export default {
     background: '#001514',
 
     primary: '#D6CFBA',
-    primary_light: '#EBE4C7',
+    primary_light: '#005652',
     primary_heavy: '#D1C7C0',
 
     white: '#FFFFFF',
-    dark_heavy: '#000000',
     border: '#C0C0C0',
 
     switcherEnabled: '#F5DD4B',

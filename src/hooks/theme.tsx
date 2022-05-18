@@ -43,7 +43,7 @@ function ThemeProvider({ children }: ThemeProviderProps) {
     <ThemeContext.Provider value={value}>
       <StyledThemeProvider theme={isEnabled ? dark : light}>
         <>
-          <StatusBar style={'auto'} translucent backgroundColor="transparent" />
+          <StatusBar style={isEnabled ? 'light' : 'auto'} translucent backgroundColor="transparent" />
           {children}
         </>
       </StyledThemeProvider>

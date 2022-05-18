@@ -6,6 +6,8 @@ import {
   ScrollContainer,
   Header,
   HeaderTitle,
+  Heading,
+  HeadingTitle,
   ThemeSwitchContainer,
   Switcher,
   ProfileContainer,
@@ -62,7 +64,11 @@ export default function Home() {
       <ScrollContainer
         contentInsetAdjustmentBehavior="never"
         scrollEventThrottle={16}
-        bounces={false}>
+        bounces={false}
+      >
+        <Heading>
+          <HeadingTitle>The best devs</HeadingTitle>
+        </Heading>
         <ProfileContainer>
           {githubProfiles.map((profile) => (
             <ProfileCard key={profile.id} userGithub={profile.userGithub} />

@@ -17,14 +17,14 @@ export const ScrollContainer = styled.ScrollView.attrs({
 `;
 
 export const Header = styled.View`
-  margin: 50px 15px 30px 15px;
+  margin: 50px 15px 10px 15px;
   flex-direction: row;
   justify-content: space-between;
 `;
 
 export const HeaderTitle = styled.Text`
   font-family: ${({ theme }) => theme.fonts.bold};
-  font-size: 16px;
+  font-size: 18px;
   color: ${({ theme }) => theme.colors.primary};
 `;
 
@@ -33,19 +33,31 @@ export const ThemeSwitchContainer = styled.View`
   justify-content: space-between;
 `;
 
+export const Heading = styled.View`
+  margin: 20px 15px;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const HeadingTitle = styled.Text`
+font-family: ${({ theme }) => theme.fonts.bold};
+font-size: 20px;
+color: ${({ theme }) => theme.colors.primary};
+`;
+
 export const Switcher = styled(Switch).attrs<SwitcherProps>(
   ({ isEnabled, theme }) => ({
     trackColor: {
-      true: theme.colors.border,
+      true: theme.colors.primary,
       false: theme.colors.primary_light,
     },
     thumbColor: isEnabled
       ? theme.colors.switcherEnabled
       : theme.colors.switcherDisabled,
-    ios_backgroundColor: theme.colors.dark_heavy,
+    ios_backgroundColor: theme.colors.primary_heavy,
   }),
-)`
-  margin-top: -15px;
+)<SwitcherProps>`
+  margin-top: -5px;
   margin-right: 10px;
 `;
 

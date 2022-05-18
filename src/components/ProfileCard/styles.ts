@@ -27,17 +27,18 @@ export const Overlay = styled.View`
   z-index: 1;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
-  opacity: 0.6;
+  opacity: 0.4;
 `;
 
 export const Avatar = styled.ImageBackground.attrs({
   borderRadius: 15,
-  resizeMode: 'contain',
+  resizeMode: 'cover',
 })``;
 
 export const Title = styled.Text`
   font-family: ${({ theme }) => theme.fonts.bold};
   font-size: 14px;
-  color: ${({ theme }) => theme.colors.dark_heavy};
+  color: ${({ theme }) => theme.colors.white};
   margin-bottom: 10px;
+  align-items: center;
 `;

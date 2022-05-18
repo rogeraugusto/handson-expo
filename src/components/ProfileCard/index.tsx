@@ -14,6 +14,11 @@ export default function ProfileCard({ userGithub }: ProfileInfo) {
       );
       const data = await response.json();
 
+      const { name } = data;
+
+      const splittedName = name.split(' ');
+
+      data.name = splittedName[0];
       setProfileData(data);
     }
 
